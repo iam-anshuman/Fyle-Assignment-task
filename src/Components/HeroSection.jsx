@@ -60,7 +60,10 @@ function HeroSection() {
                 </div>
                 <div className={`${openModal?'visible':'hidden'} fixed min-w-[30vw] z-50 mx-auto border-2 p-5 bg-[#FAFAFA] rounded-md top-1/4`}>
                   <form className="min-w-lg" onSubmit={(e)=>handleSubmit(e)}>
+                    <div className="flex justify-between">
                     <div className=" my-5 font-Poppins text-left font-semibold text-3xl">Talk to us</div>
+                    <svg onClick={()=>setOpenModal(false)} className="my-5 cursor-pointer" fill="#000000" height="30px" width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 490 490" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <polygon points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490 489.292,457.678 277.331,245.004 489.292,32.337 "></polygon> </g></svg>
+                    </div>
                     <div className="relative z-0 w-full my-5 group">
                         <input type="email" name="floating_email" id="floating_email" className="block py-2.5 px-0 w-full text-lg font-semibold text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-gray-900 dark:border-gray-600 dark:focus:border-gray-500 focus:outline-none focus:ring-0 focus:border-gray-600 peer" placeholder=" " required />
                         <label htmlFor="floating_email" className="w-full peer-focus:font-medium absolute text-lg text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-8 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-gray-600 peer-focus:dark:text-gray-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-110 peer-focus:-translate-y-8">Work Email</label>
